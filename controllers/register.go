@@ -3,7 +3,7 @@ package controllers
 import "net/http"
 
 
-func RegisterController(){
+func RegisterControllers(){
     userControllerInstance := newUserController();
 
     http.Handle("/users", *userControllerInstance);
